@@ -1,15 +1,4 @@
-import torch
-import yaml
-from tqdm import tqdm
-import imageio
-import numpy as np
-from skimage.transform import resize
-from skimage import img_as_ubyte
-from sync_batchnorm import DataParallelWithCallback
-from modules.generator import OcclusionAwareGenerator
-from modules.keypoint_detector import KPDetector
-from animate import normalize_kp
-import cv2
+
 import dlib
 
 def load_checkpoints(config_path, checkpoint_path):
